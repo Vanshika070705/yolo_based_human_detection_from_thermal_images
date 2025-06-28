@@ -33,18 +33,6 @@ The model is trained on a custom thermal dataset that includes people moving und
 
 The dataset is structured in **YOLO format** with separate folders for images and labels:
 
-thermal_yolo/
-├── data/
-│ └── yolo_ready_dataset/
-│ ├── images/
-│ │ ├── train/
-│ │ └── val/
-│ ├── labels/
-│ │ ├── train/
-│ │ └── val/
-│ └── thermal_dataset.yaml
-
-
 
 ### `thermal_dataset.yaml` format:
 ```yaml
@@ -78,20 +66,6 @@ pip install ultralytics opencv-python matplotlib
 ```
 
 ### 3. Run Inference Script
-
-* Open and execute:
-
-```bash
-scripts/results_yolo.ipynb
-```
-
-This includes:
-
-* Dataset parsing  
-* Model loading from `runs/detect/train/weights/best.pt`  
-* Prediction and visualization on thermal image samples
-
----
 
 ## Author
 
